@@ -27,6 +27,19 @@
       background-color: red; /* Change the color of the circle as desired */
       border-radius: 50%;
     }
+
+    /* Media query for smaller screens (e.g., phones) */
+    @media (max-width: 768px) {
+      .myinfo {
+        top: 100px; /* Adjust the position for smaller screens */
+        left: 50px; /* Adjust the position for smaller screens */
+        width: 80%; /* Adjust the width for smaller screens */
+      }
+
+      .video-container {
+        padding-top: 30%; /* Adjust the aspect ratio for smaller screens */
+      }
+    }
   </style>
 </head>
 <body>
@@ -62,10 +75,12 @@
     <a href="contact.html" class="btn btn-danger mr-3 hue">Contact</a> <!-- Link to contact.html -->
   </div>
 
-  <video autoplay loop play-inline muted>
-    <source src="Happy Holi 2024 By CWS.mp4">
-    video is not load
-  </video>
+  <div class="video-container">
+    <video autoplay loop play-inline muted>
+      <source src="Happy Holi 2024 By CWS.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js" integrity="sha384-uHHgnLBrLqRy2i89wK2L0RBc+x8S6O9KTlr8Jt74YdV8TdNKLZrVtnHBvSOW4iXG" crossorigin="anonymous"></script>
